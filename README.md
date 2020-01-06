@@ -16,7 +16,7 @@ from convolut_telegram import TelegramLogger
 
 # ...
 
-(Runner(loaders=[train_loader, valid_loader], epochs=epochs, steps_per_epoch=10)
+(Runner(loaders=[train_loader, valid_loader], epochs=epochs)
     # ...
     .add(TelegramLogger(token="YOUR_BOT_TOKEN_HERE", chat_id="YOUR_CHAT_ID_HERE"))
     .start()
@@ -41,7 +41,7 @@ from convolut_telegram import TelegramLogger
 
 # ...
 
-(Runner(loaders=[train_loader, valid_loader], epochs=epochs, steps_per_epoch=10)
+(Runner(loaders=[train_loader, valid_loader], epochs=epochs)
     # ...
     .add(TelegramLogger())
     .start()
